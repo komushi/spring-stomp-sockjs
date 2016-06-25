@@ -25,9 +25,11 @@ ws://localhost:8080/endpoint
 ----------
 Run the SockJS Server
 -------------
-###build & run on console
+###download & build & run with java cli
 
 ```
+git clone https://github.com/komushi/spring-stomp-sockjs.git
+cd spring-stomp-sockjs
 mvn clean pacakge
 java -jar target/StompSockJS-0.0.1-SNAPSHOT.jar
 ```
@@ -43,5 +45,5 @@ The following node.js WebSocket Client demo works with this server demo.
 git clone https://github.com/komushi/stomp-client-samples
 cd stomp-client-samples
 npm install
-node.js stomp-over-ws-spring.js
+node.js stomp-over-sockjs-spring.js
 ```
